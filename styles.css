@@ -3,22 +3,35 @@ body{
     display: grid;
     place-items: center;
     background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    font-family: "Outfit", serif;
 }
 
 .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     border: 0 solid;
-    border-radius: 25px;
     position: relative;
-    height: 70%;
+    border-radius: 25px;
+    height: 60%;
     max-width: 300px;
     margin: auto;
     padding: 15px;
     background-color: hsl(0, 0%, 100%);
-    
 }
 
 h3, p{
     text-align: center;
+}
+
+h3{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
 }
 
 img{
@@ -28,5 +41,9 @@ img{
 }
 
 .attribution{
-    border: solid;
+    position: fixed;
+    bottom: 5%;
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
 }
